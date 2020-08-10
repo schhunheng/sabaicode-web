@@ -1,0 +1,25 @@
+.title, .subtitle{
+    text-align: center;
+}
+.img{
+    width: 100%;
+}
+.top-mission{
+    margin-top: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+
+}
+.group-mission{
+    margin:0 20vh
+}
+.group-mission h1{
+    text-align: center;
+    font-weight: bold;
+    padding: 30px;
+}
+.images{
+    width: 100%;
+   
+    border-radius: 20px;
+}

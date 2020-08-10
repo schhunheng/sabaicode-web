@@ -1,0 +1,15 @@
+.footer {
+    background-color: #51CBD0;
+    height: 20vh;
+    margin-top: 5vh;
+    text-align: center;
+    min-height: 400px;
+}
+.logo{
+    width:10vh;
+    border-radius: 5;
+    margin: 20px 0px;
+}
+.item1{
+    padding: 50px;
+}

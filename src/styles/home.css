@@ -1,0 +1,29 @@
+.home{
+   padding:0px;
+   margin: 0px;
+   height: 100vh;
+}
+/* @media  (max-width:1200px){
+    .home{
+        background-color: green;
+        
+    }
+} */
+.our-story{
+    margin-top: 20px;
+    text-align: center;
+}
+.our-story h1{
+    font-weight: bold;
+}
+.our-story{
+    font-size: 20px;
+}
+.button-continueReading{
+    margin-top: 25px;
+    text-align: center;
+
+}
+.button{
+    padding: 20px;
+}
