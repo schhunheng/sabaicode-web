@@ -1,4 +1,4 @@
-import React, { useState, useContext,useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import {
   Drawer as MapDrawer,
   List,
@@ -28,8 +28,8 @@ import About from "./../../pages/about";
 import Course from "./../../pages/course";
 import OurPeople from "./../../pages/ourPeople";
 import Press from "./../../pages/press";
-import Contact from "./../../pages/contact";
-import DrawerContext from './../../contexts/drawerContext'; 
+import ContactPage from "./../../pages/contactPage";
+import DrawerContext from "./../../contexts/drawerContext";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -52,11 +52,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   tab: {
-    backgroundColor: 'white',
-    color: 'black',
-    
-  
-  }
+    backgroundColor: "white",
+    color: "black",
+  },
 }));
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -87,43 +85,36 @@ TabPanel.propTypes = {
 
 function DemoTabs(props) {
   const { labelId, onChange, selectionFollowsFocus, value } = props;
-  const [statusDrawer,setSatusDrawer]= useContext(DrawerContext); 
- 
+  const [statusDrawer, setSatusDrawer] = useContext(DrawerContext);
+
   useEffect(() => {
-    setSatusDrawer(statusDrawer)
-    
+    setSatusDrawer(statusDrawer);
   });
 
-  
   console.log(statusDrawer);
   return (
-    <div className='rootTabs'>
+    <div className="rootTabs">
       <Tabs
         aria-labelledby={labelId}
         variant="scrollable"
         onChange={onChange}
         selectionFollowsFocus={selectionFollowsFocus}
         value={value}
-        className='tabs'
-        orientation={statusDrawer ? 'vertical' : 'horizontal'}
-        
-        
+        className="tabs"
+        orientation={statusDrawer ? "vertical" : "horizontal"}
       >
-        
-        <Tab  label="Home" aria-controls="a11y-tabpanel-0" id="a11y-tab-0"  />
-        <Tab label="About" aria-controls="a11y-tabpanel-1" id="a11y-tab-1"  />
+        <Tab label="Home" aria-controls="a11y-tabpanel-0" id="a11y-tab-0" />
+        <Tab label="About" aria-controls="a11y-tabpanel-1" id="a11y-tab-1" />
         <Tab label="courses" aria-controls="a11y-tabpanel-2" id="a11y-tab-2" />
         <Tab
           label="our people"
           aria-controls="a11y-tabpanel-3"
           id="a11y-tab-3"
-         
         />
         <Tab label="press" aria-controls="a11y-tabpanel-4" id="a11y-tab-4" />
         <Tab label="contact" aria-controls="a11y-tabpanel-5" id="a11y-tab-5" />
       </Tabs>
     </div>
-    
   );
 }
 DemoTabs.propTypes = {
@@ -133,13 +124,6 @@ DemoTabs.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     flexGrow: 1,
-//     backgroundColor: theme.palette.background.paper,
-//   },
-// }));
-
 export default function Header() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
@@ -148,29 +132,27 @@ export default function Header() {
     setValue(newValue);
   };
   return (
-    <DrawerContext.Provider value ={ [statusDrawer,setSatusDrawer] }>
-      <AppBar position="static" style={{ padding: 0,margin :0 }}>
+    <DrawerContext.Provider value={[statusDrawer, setSatusDrawer]}>
+      <AppBar position="static" style={{ padding: -20, margin: 0 }}>
         <Toolbar className="header" style={{ padding: 0 }}>
           <div className="sub-header">
             <div className="group-logos">
               <Iconbuttonn edge="start" color="inherit" aria-label="menu">
-                <img src="logo.jpg" className="logo" />
+                <img src="logo.jpg" className="logo" alt="logo" />
               </Iconbuttonn>
-              <h1 className="title">
+              <h2 className="title">
                 Sabai Code
                 <p>Coding and STEM for the Youngters</p>
-              </h1>
+              </h2>
             </div>
             <div className="botton-links">
               <div className={classes.sectionDesktop}>
-                
                 <DemoTabs
                   labelId="demo-a11y-tabs-automatic-label"
                   selectionFollowsFocus
                   onChange={handleChange}
                   value={value}
-                  />
-                 
+                />
               </div>
             </div>
             <div className="drawer">
@@ -199,7 +181,6 @@ export default function Header() {
                         labelId="demo-a11y-tabs-manual-label"
                         onChange={handleChange}
                         value={value}
-                        
                       />
                     </List>
                   </MapDrawer>
@@ -225,7 +206,7 @@ export default function Header() {
         <Press />
       </TabPanel>
       <TabPanel value={value} index={5}>
-        <Contact />
+        <ContactPage />
       </TabPanel>
     </DrawerContext.Provider>
   );

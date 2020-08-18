@@ -1,4 +1,67 @@
-.name{
-    font-weight: bold;
-    color:red;
+.our-people-page{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+
+}
+.our-people-title{
+    text-align: center;
+    background-color: #ccf6f1;
+    height: 175px;
+    padding : 40px;
+    margin-bottom : 50px;
+
+}
+.founder-des1,.founder-des2,.founder-des3,.founder-des4,.founder-des5{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: justify;
+    font-size: 18px;
+}
+.co-founder-des1, .co-founder-des2 , .co-founder-des3{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: justify;
+    font-size: 18px;
+}
+.coaches-des1,.coaches-des2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.our-people-footer{
+    text-align: center;
+}
+.our-people-footer button{
+    width: 300px;
+    padding: 10px;
+    border-radius: 7px;
+}
+.our-people-footer button :hover{
+    background-color: limegreen;
+}
+.our-people-title h2{
+    text-decoration: underline;
+}
+
+.our-poeple-footer button{
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    background-color:green;
+    
+}
+.our-people-footer hr{
+    width: 75%;
+    height: 5px;
+    background-color: rgb(26, 141, 170);
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.founder,.co-founder{
+    border-radius: 10px;
+    border:2px solid #ccf6f1;
+    
 }

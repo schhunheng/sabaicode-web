@@ -1,6 +1,7 @@
 .header {
     background-color:#51CBD0 ;
     padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .sub-header{
     position: relative;
@@ -17,11 +18,11 @@
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
     border-radius: 50px;
   }
   .title{
-     margin-top: 40px;
+     margin-top: 20px;
 
   }
 .title p{

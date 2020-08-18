@@ -1,29 +1,36 @@
-.home{
+.home-page{
    padding:0px;
    margin: 0px;
-   height: 100vh;
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-/* @media  (max-width:1200px){
-    .home{
-        background-color: green;
-        
-    }
-} */
-.our-story{
-    margin-top: 20px;
+
+.our-story,.our-mission{
+    padding: 40px;
     text-align: center;
-}
-.our-story h1{
     font-weight: bold;
 }
-.our-story{
-    font-size: 20px;
-}
+
 .button-continueReading{
     margin-top: 25px;
-    text-align: center;
+    margin-left:60%;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:rgb(198, 202, 198);
+    width: 200px;
+}
+.button-continueReading :hover{
+    background-color: blue;
+}
+.footer-page{
+    display: block;
+    margin-top: 10px;
+}
+@media (max-width: 900px){
+    .button-continueReading{
+        margin-left: 0%;
+    }
+}
 
-}
-.button{
-    padding: 20px;
-}
+
+

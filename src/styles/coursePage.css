@@ -1,0 +1,89 @@
+
+.courses{
+    background-color: rgb(171, 237, 240);
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    color: rgb(133, 133, 133);
+    text-shadow: 0px 0px 1px #2c2c2c;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 23px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: grey;
+
+}
+.course-title{
+    text-shadow: 0px 0px 1px #2c2c2c;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(145, 144, 144);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    
+}
+.fine{
+    color: rgb(95, 94, 94);
+    font-size: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.line{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 2px;
+    background-color: lightseagreen;
+}
+.coding{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 98px;
+    padding-right: 98px;
+}
+.course{
+    padding-left: 55px;
+    padding-right: 53px;
+}
+.pic{
+    padding-left: 53px;
+    padding-right: 55px;
+    float: right;
+}
+.tm-content, .tm-course{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.course-subtitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: grey;
+    font-size: 20px;
+}
+.New{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(99, 98, 98);
+    font-size: 20px;
+}
+
+.aligncenter {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

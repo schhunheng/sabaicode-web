@@ -1,5 +1,6 @@
-.container{
+.containers{
     color:blue;
+    width: 100%;
 }
 .hello{
     color:black;

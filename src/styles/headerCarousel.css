@@ -1,17 +1,17 @@
 .image{
-    height: 90vh;
+    height: 110vh;
     border-radius: 0px;
 }
-@media (max-width:1400px){
+/* @media (max-width:1400px){
     .image{
       height: 60vh;
      
     }
-  }
+  } */
   @media (max-width:1400px){
     .image{
       height: 70vh;
-     
+
     }
   }
 @media (max-width:1000px){

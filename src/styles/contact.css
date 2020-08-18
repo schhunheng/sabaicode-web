@@ -1,0 +1,44 @@
+.contact-page{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+p{
+    font-size: 16px;
+}
+.contact-title{
+    text-align: center;
+    height: 175px;
+    background-color:  #ccf6f1;
+    padding : 50px;
+    margin-bottom: 50px;
+
+}
+.title-contact-info{
+
+      text-decoration: underline;
+}
+.contact-title h2{
+    font-weight: bolder;
+    text-decoration: underline;
+    text-justify: center;
+}
+.form-contact{
+    width: 100%;
+}
+.form-contact input{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding : 15px;
+    border-radius: 10px;
+    width: 100%
+}
+.form-contact textarea{
+    width: 100%;
+    height: 200px;
+}
+.form-contact button{
+    padding : 10px;
+    background-color: #5cb85c;
+    width: 125px;
+    border-radius: 10px;
+}

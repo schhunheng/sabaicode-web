@@ -1,0 +1,15 @@
+.home-images{
+    width: 100%;
+    height: auto;
+    margin-top:25px;
+}
+.home-subtitle,.home-title{
+    text-align: center;
+}
+.home-subtitle{
+    margin-top: 50px;
+}
+.container-image{
+    height: 300px;
+    display:block;
+}
