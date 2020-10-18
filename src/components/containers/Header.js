@@ -20,6 +20,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Iconbuttonn from "@material-ui/core/Iconbutton";
+import { useHistory } from "react-router-dom";
 // =================My Import ============
 import "../../styles/header.css";
 
@@ -30,6 +31,7 @@ import OurPeople from "./../../pages/ourPeople";
 import Press from "./../../pages/press";
 import ContactPage from "./../../pages/contactPage";
 import DrawerContext from "./../../contexts/drawerContext";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -86,6 +88,8 @@ TabPanel.propTypes = {
 function DemoTabs(props) {
   const { labelId, onChange, selectionFollowsFocus, value } = props;
   const [statusDrawer, setSatusDrawer] = useContext(DrawerContext);
+  console.log(DrawerContext);
+  // const history = useHistory();
 
   useEffect(() => {
     setSatusDrawer(statusDrawer);
@@ -126,18 +130,30 @@ DemoTabs.propTypes = {
 
 export default function Header() {
   const classes = useStyles();
+  const history = useHistory();
   const [value, setValue] = React.useState(0);
   const [statusDrawer, setSatusDrawer] = useState(false);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+ 
+
   return (
     <DrawerContext.Provider value={[statusDrawer, setSatusDrawer]}>
       <AppBar position="static" style={{ padding: -20, margin: 0 }}>
         <Toolbar className="header" style={{ padding: 0 }}>
           <div className="sub-header">
             <div className="group-logos">
-              <Iconbuttonn edge="start" color="inherit" aria-label="menu">
+              <Iconbuttonn
+                onclick={() => {
+                  localStorage.removeItem("usertoken");
+                  history.push(`/`);
+                  console.log("logout!")
+                }}
+                edge="start"
+                color="inherit"
+                aria-label="menu"
+              >
                 <img src="logo.jpg" className="logo" alt="logo" />
               </Iconbuttonn>
               <h2 className="title">
@@ -158,6 +174,7 @@ export default function Header() {
             <div className="drawer">
               <div className={classes.sectionMobile}>
                 <div>
+                  {/* Update Status Drawer */}
                   <IconButton onClick={() => setSatusDrawer(true)}>
                     <MenuIcon style={{ color: " #000000" }} fontSize="large" />
                   </IconButton>
@@ -176,7 +193,7 @@ export default function Header() {
                         </ListItemText>
                       </ListItem>
                       <Divider />
-                      {/* ================================================== */}
+                    
                       <DemoTabs
                         labelId="demo-a11y-tabs-manual-label"
                         onChange={handleChange}
@@ -208,6 +225,7 @@ export default function Header() {
       <TabPanel value={value} index={5}>
         <ContactPage />
       </TabPanel>
+      <TabPanel value={value} index={6}></TabPanel>
     </DrawerContext.Provider>
   );
 }

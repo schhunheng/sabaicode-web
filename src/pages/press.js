@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../components/containers/Footer";
+import FooterHome from "../components/containers/FooterHome";
 import Sien from './../components/containers/Sien'
 
 export default function Press() {
@@ -7,7 +7,7 @@ export default function Press() {
     <div>
       <Sien />
       <div className="footer-page">
-          <Footer/>
+          <FooterHome/>
       </div>
     </div>
   );

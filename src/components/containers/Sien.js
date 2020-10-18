@@ -57,9 +57,8 @@ export default function Sien() {
       </h4>
       <p className="Date">July 19, 2020 by Sabaicode</p>
       <div className="tm_element">
-        <a href=" https://www.phnompenhpost.com/opinion/three-practical-subjects-teach-every-school">
-          {" "}
-          https://www.phnompenhpost.com/opinion/three-practical-subjects-teach-every-school
+        <a href=" https://www.phnompenhpost.com/opinion/three-practical-subjects-teach-every-school" style={{textAlign:"justify"}}>
+          https://www.phnompenhpost.com/opinion/ three-practical-subjects-teach-every-school
         </a>
       </div>
 
@@ -71,7 +70,7 @@ export default function Sien() {
       </p>
       <br />
       <a href=" https://www.phnompenhpost.com/lifestyle-creativity-innovation/sabai-code-developing-young-coders-potential">
-        {" "}
+       
         https://www.phnompenhpost.com/lifestyle-creativity-innovation/sabai-code-developing-young-coders-potential
       </a>
 

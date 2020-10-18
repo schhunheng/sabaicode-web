@@ -10,5 +10,4 @@ const GroupSocialMedia = () => {
         </div>
     );
 };
-
 export default GroupSocialMedia;

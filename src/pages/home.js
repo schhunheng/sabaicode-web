@@ -34,7 +34,7 @@ export default function Home() {
           </Grid>
           <Grid item xs={4}></Grid>
         </Grid>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={0} justify="center">
           <Grid item xs={10} sm={5} md={3}>
             <Imagewithtext
               title="Why"
@@ -58,8 +58,8 @@ export default function Home() {
             />
           </Grid>
         </Grid>
-        <h1 className="our-mission">Our Mission</h1>
-        <Grid container spacing={3} justify="center">
+        <h1 className="our-mission">Our Mission</h1> 
+         <Grid container spacing={0} justify="center">
           <Grid item xs={10} sm={5} md={3}>
             <img
               src="/assets/images/img_3129.jpg"
@@ -81,15 +81,9 @@ export default function Home() {
               className="image3"
             />
           </Grid>
-          {/* <Grid item xs={10} sm={5} md={3}>
-            <img
-              src="/assets/images/img_3129.jpg"
-              alt="why"
-              className="image2"
-            />
-          </Grid> */}
+
         </Grid>
-        <Grid container spacing={3} justify="center">
+        <Grid container spacing={0} justify="center">
           <Grid item xs={10} sm={5} md={3}>
             <img
               src="assets/images/img_3123.jpg"
@@ -111,17 +105,11 @@ export default function Home() {
               className="image2"
             />
           </Grid>
-          {/* <Grid item xs={10} sm={5} md={3}>
-            <img
-              src="assets/images/img_3123.jpg"
-              alt="why"
-              className="image3"
-            />
-          </Grid> */}
-        </Grid>
+         
+        </Grid> 
       </div>
       <div className="footer-page">
-        <FooterHome />
+        <FooterHome /> 
       </div>
     </div>
   );

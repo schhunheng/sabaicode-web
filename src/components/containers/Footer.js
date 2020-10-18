@@ -7,19 +7,24 @@ import GroupSocialMedia from './../presentations/groupSocialMedia';
 const Footer = () => {
     return (
         <div class="all-footer">
-            <Grid style={{margin: 10}} container justify="center" spacing={4}>
-                <Grid item xs={12} md={3}>
+            <Grid  container justify="center" >
+                <div style={{margin: 10}}>
+                <Grid item xs={10} md={3}>
                     <SearchButton/>
                 </Grid>
-                <Grid item xs={12} md={3}>
+                <Grid item xs={10} md={3}>
                     <ShareButton />
                 </Grid>
+               </div>
             </Grid>
-            <Grid style={{marginTop: 10}} container justify="center">
+            <Grid container justify="center">
+                <div style={{marginTop: 10}}>
                 <Grid item xs={10} md={4}>
                     <GroupSocialMedia />
                     <h4 >Coding and STEM for the Youngsters</h4>
                 </Grid>
+                </div>
+                
             </Grid>
         </div>
     );

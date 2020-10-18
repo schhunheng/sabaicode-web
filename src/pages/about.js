@@ -2,7 +2,7 @@ import React from "react";
 import { Player } from "video-react";
 import "../../node_modules/video-react/dist/video-react.css";
 import "./.././styles/about.css";
-import Footer from "../components/containers/Footer";
+import FooterHome from "../components/containers/FooterHome";
 import Grid from "@material-ui/core/Grid";
 export default function About() {
   return (
@@ -92,7 +92,7 @@ export default function About() {
         </Grid>
       </Grid>
       <div className="footer-page">
-          <Footer/>
+          <FooterHome/>
       </div>
     </div>
   );

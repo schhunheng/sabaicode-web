@@ -8,7 +8,7 @@ import GroupSocialMedia from "../presentations/groupSocialMedia";
 const FooterHome = () => {
   return (
     <div className="footer-home">
-      <Grid container spacing={3}>
+      <Grid container >
         <Grid item xs={12} md={4}>
           <div className="item-1">
             <h3 id="about">About</h3>

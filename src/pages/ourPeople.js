@@ -1,8 +1,7 @@
 import React from "react";
 import "./../styles/ourpeople.css";
 import Grid from "@material-ui/core/Grid";
-import Footer from './../components/containers/Footer';
-
+import FooterHome from "../components/containers/FooterHome";
 export default function OurPeople() {
   return (
     <div className="our-people-page">
@@ -15,7 +14,7 @@ export default function OurPeople() {
             We aspire to make a difference.
           </p>
       </div>
-      <Grid container justify="flex-start" alignItems="flex-end" spacing ={4}>
+      <Grid container justify="flex-start" alignItems="flex-end" spacing ={0}>
       <Grid item xs={1}></Grid>
         <Grid item xs={10} sm={3}>
         <img src="assets/images/founder.jpg" alt="founder" className="founder" />
@@ -71,7 +70,7 @@ export default function OurPeople() {
           </Grid>
       </Grid>
       {/* Co-founder */}
-      <Grid container justify="flex-end" alignItems="flex-end" spacing ={4}>
+      <Grid container justify="flex-end" alignItems="flex-end" spacing ={0}>
         <Grid item xs={6}></Grid>
         <Grid item xs={12} sm={2}>
           <h2 style={{textAlign:'center'}}>SAREUON SOUM</h2>
@@ -108,9 +107,9 @@ export default function OurPeople() {
           </Grid>
       </Grid>
       {/* Coaches */}
-      <Grid container justify="center" spacing ={4}>
+      <Grid container justify="center" spacing ={0}>
         <Grid item xs={1}></Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={10} sm={4}>
         <img src="assets/images/coaches.png" alt="coaches" />
         <h3 style={{textAlign:'center'}}>Our Coaches</h3>
         </Grid>
@@ -138,16 +137,16 @@ export default function OurPeople() {
       </Grid>
       {/* footer  */}
       <Grid container justify="center">
-        <Grid item xs={5}>
+     
           <div className="our-people-footer">
             <hr />
             <p>Want to work with us?</p>
             <button > GET IN TOUCH</button>
           </div>
-        </Grid>
+        
       </Grid>
       <div style={{ marginTop: 30 }}>
-      <Footer/>
+      <FooterHome/>
      </div>
     </div>
   );

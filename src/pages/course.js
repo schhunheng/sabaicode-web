@@ -4,8 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 
-import CourseComponent from './../components/presentations/coursePage';
-import Footer from './../components/containers/Footer';
+import CourseComponent from './../components/presentations/courseComponent';
+import FooterHome from "../components/containers/FooterHome";
 
 const useStyles = makeStyles({
     root: {
@@ -29,19 +29,24 @@ export default function Course() {
     return (
         <div>
             <h2 className="courses">COURSES</h2>
-            <p className="text">
+            <Grid container justify="center">
+                <Grid item xs={10}>
+                <p className="text">
                 Our goal is to bring world class curriculum to our students. Leveraging our connections in Silicon Valley of
                 the United States, we will always be introducing the newest and most relevant curriculum to our classrooms.
                 <br></br>
                 <br></br>
                 Here are the current course offerings. Check back often for updates.
             </p>
+                </Grid>
+            </Grid>
+           
 
             <hr className="line"></hr>
 
-            <Grid container classname="tm-content">
+            <Grid container justify="center" classname="tm-content">
 
-                <Grid item xs={12} md={6} lg={6} className="coding">
+                <Grid item xs={10} md={5} lg={5} className="coding">
                     <CourseComponent title="CODING" url="assets/images/helloworld.png"
                         subtitle="Young students will begin with block-based programming
                     using United States’s latest progressive curriculum.
@@ -55,7 +60,7 @@ export default function Course() {
 
                 </Grid>
 
-                <Grid item xs={12} md={6} lg={6} className="coding">
+                <Grid item xs={10} md={5} lg={5} className="coding">
                     <CourseComponent title="ROBOTIC" url="assets/images/robotic.jpg"
                         subtitle="Students will get to learn coding through
                             assembling and controlling robotics. In
@@ -71,13 +76,13 @@ export default function Course() {
 
             <hr className="line"></hr>
 
-            <Grid container className="tm-course" >
+            <Grid container justify="center" className="tm-course" >
 
-                <Grid item xs={12} md={5} xl={4} className="course">
+                <Grid item xs={10} md={4} xl={3} >
                     <img src="assets/images/animation.gif" width="100%"></img>
                 </Grid>
 
-                <Grid item xs={12} md={7} xl={8} className="course">
+                <Grid item xs={10} md={6} xl={7} >
                     <p className="New">
                         New Course: Animations and Games in JavaScript
                     <br />
@@ -98,9 +103,9 @@ export default function Course() {
 
             </Grid>
 
-            <Grid container className="tm-course">
+            <Grid container justify="center" className="tm-course">
 
-                <Grid item xs={12} md={7} xl={8} className="course">
+                <Grid item xs={10} md={6} xl={7}  >
                     <p className="New">
                         New Course: Intro to Web Development (online or in-person)
                         <br />
@@ -118,7 +123,7 @@ export default function Course() {
                     </p>
                 </Grid>
 
-                <Grid item xs={12} md={5} xl={4} className="pic">
+                <Grid item xs={10} md={4} xl={3} className="pic">
                     <img src="assets/images/course.gif" width="100%"></img>
                 </Grid>
 
@@ -128,14 +133,11 @@ export default function Course() {
 
             <h3 className="fine">To Fine Out More</h3>
             <div className='aligncenter'>
-                <Button classes={{
-                    root: classes.root,
-                    label: classes.label,
-                }} >
+                <Button >
                     Get in Touch!
                 </Button>
             </div>
-            <Footer/>
+            <FooterHome/>
 
         </div>
     );

@@ -10,13 +10,12 @@ describe("Header component ", () => {
 
   test("check length of  image slide", () => {
     // console.log(header.debug());
-     
+
     expect(header.find("img").length).toEqual(3);
   });
   test("isImage not null", () => {
-    for (let i; i < header.find("img").length ; i++){
+    for (let i; i < header.find("img").length; i++) {
       expect(header.find("img").prop("src")[i]).not.toEqual(null);
     }
-    
-  })
+  });
 });
